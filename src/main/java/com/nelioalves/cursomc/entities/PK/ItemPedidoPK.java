@@ -1,7 +1,10 @@
-package com.nelioalves.cursomc.entities;
+package com.nelioalves.cursomc.entities.PK;
 
 import java.io.Serializable;
 import java.util.Objects;
+
+import com.nelioalves.cursomc.entities.Pedido;
+import com.nelioalves.cursomc.entities.Produto;
 
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;

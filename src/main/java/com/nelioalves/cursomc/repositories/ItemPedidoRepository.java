@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.nelioalves.cursomc.entities.ItemPedido;
-import com.nelioalves.cursomc.entities.ItemPedidoPK;
+import com.nelioalves.cursomc.entities.PK.ItemPedidoPK;
 
 @Repository
 public interface ItemPedidoRepository extends JpaRepository<ItemPedido, ItemPedidoPK> {
