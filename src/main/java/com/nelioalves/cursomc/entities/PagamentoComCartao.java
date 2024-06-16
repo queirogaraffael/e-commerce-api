@@ -1,8 +1,8 @@
-package com.nelioalves.cursomc.domain;
+package com.nelioalves.cursomc.entities;
 
-import javax.persistence.Entity;
+import com.nelioalves.cursomc.entities.enums.EstadoPagamento;
 
-import com.nelioalves.cursomc.domain.enums.EstadoPagamento;
+import jakarta.persistence.Entity;
 
 @Entity
 public class PagamentoComCartao extends Pagamento {

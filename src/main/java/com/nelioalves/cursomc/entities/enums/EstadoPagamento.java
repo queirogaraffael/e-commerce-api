@@ -1,4 +1,4 @@
-package com.nelioalves.cursomc.domain.enums;
+package com.nelioalves.cursomc.entities.enums;
 
 public enum EstadoPagamento {
 	
