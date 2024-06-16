@@ -39,12 +39,16 @@ public class CategoriaService {
 		return new CategoriaDTO(categoria.getId(), categoria.getNome());
 	}
 
-	public Categoria update(Integer id, Categoria categoriaUpdated) {
+	public CategoriaDTO update(Integer id, Categoria categoriaUpdated) {
 		Optional<Categoria> optionalCategoria = repositorio.findById(id);
 		if (optionalCategoria.isPresent()) {
 			Categoria categoria = optionalCategoria.get();
 			categoria.setNome(categoriaUpdated.getNome());
-			return repositorio.save(categoria);
+
+			repositorio.save(categoria);
+
+			return new CategoriaDTO(categoria.getId(), categoria.getNome());
+
 		} else {
 			return null;
 		}
